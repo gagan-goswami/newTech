@@ -1,0 +1,107 @@
+/* media-Query 992 */
+
+@media (max-width: 991px) {
+  .hero-section .hero-image {
+    display: none;
+  }
+
+  .header-section .conatact-btn {
+    display: none;
+  }
+
+  .header-section .nav-link {
+    margin: 0;
+  }
+
+  .header-section .nav-link::after {
+    transform: scaleX(100%);
+    margin: 0px;
+    height: 1px;
+  }
+
+  .offcanvas-body {
+    padding: 10px 0;
+    background-color: var(--dark);
+  }
+
+  .service-section .section-title,
+  .why-choose-us .section-title,
+  .partner-section .section-title,
+  .students-section .section-title,
+  .testimonial-section .section-title,
+  .our-courses .section-title,
+  .it-services .section-title {
+    margin: 0px 0px 45px 0px;
+  }
+
+  .header-section .nav-link::after {
+    height: 1px;
+    bottom: 0;
+  }
+
+  .header-section .nav-link:hover:after {
+    bottom: 0px;
+  }
+}
+
+/* media-Query 768px */
+
+@media (max-width: 767px) {
+  .service-section .service-item {
+    height: 370px;
+  }
+}
+
+/* media-Query 575px */
+
+@media (max-width: 575px) {
+  .service-section .section-title h2,
+  .our-company-section .section-title h2,
+  .why-choose-us .section-title h2,
+  .partner-section .section-title h2,
+  .students-section .section-title h2,
+  .testimonial-section .section-title h2,
+  .cta-section .cta-item .content h2,
+  .our-courses .section-title h2,
+  .it-services .section-title h2,
+  .free-demo .section-title h2,
+  .contact-info .section-title h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .genai-section .hero h1 {
+    font-size: 30px;
+  }
+
+  .cta-section .cta-item .content {
+    width: 100%;
+  }
+
+  .best-offers .offers-box-content h2 {
+    font-size: 30px;
+  }
+
+  .our-company-section .section-title span:not(.color-text)::after {
+    display: none;
+  }
+
+  .breadcrumb-section .breadcrumb-heading h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 475px) {
+  .hero-section .hero-caption h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-section .hero-caption .contact-link {
+    padding: 10px 11px;
+  }
+  .cta-section .learn-btn {
+    padding: 10px 11px;
+  }
+}
