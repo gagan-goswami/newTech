@@ -1,7 +1,7 @@
 /* ====== Colors ====== */
 :root {
   --primary-color: #09a2ee;
-  --secondary-color: #b2a1ed;
+  --secondary-color: #fc3033;
   --dark: #212529;
   --white: #ffffff;
   --grey: #516263;
@@ -108,16 +108,16 @@ strong {
   z-index: 9999;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 3px;
   animation: slideInDown 0.4s ease-in;
-  padding: 5px 0;
   background-color: var(--secondary-color);
 }
 
 .header-section .navbar-brand {
   padding: 0;
+  background-color: var(--white);
 }
 
 .header-section .navbar-brand img {
-  width: 180px;
+  width: 200px;
   height: auto;
 }
 
