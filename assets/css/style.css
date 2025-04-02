@@ -287,8 +287,8 @@ strong {
 }
 
 .header-section .conatact-btn:hover {
-  color: var(--secondary-color);
-  background-color: var(--white);
+  color: var(--white);
+  background-color: var(--secondary-color);
   transition: ease-in-out 0.5s;
 }
 
@@ -358,6 +358,13 @@ strong {
   font-family: "Krona One", sans-serif;
 }
 
+.hero-section .contact-link .btn-primary:hover i,
+.hero-section .contact-link .btn-secondary:hover i {
+  transform: rotate(360deg);
+  transition: 0.5s;
+  border-radius: 50%;
+}
+
 .hero-section .contact-link .btn-primary i {
   background-color: var(--dark);
   color: var(--white);
@@ -367,6 +374,7 @@ strong {
   line-height: 45px;
   margin-left: 5px;
   font-size: 18px;
+  transition: 0.5s;
 }
 
 .hero-section .contact-link .btn-secondary {
@@ -391,6 +399,7 @@ strong {
   line-height: 45px;
   margin-left: 5px;
   font-size: 18px;
+  transition: 0.5s;
 }
 
 /* ===hero-section-end=== */
@@ -504,7 +513,7 @@ strong {
   font-size: 20px;
   font-weight: 500;
   color: var(--white);
-  margin: 20px 20px 0px 20px;
+  margin-top: 20px;
   font-family: "Krona One", sans-serif;
 }
 
@@ -634,6 +643,14 @@ strong {
   text-decoration: none;
   font-weight: 500;
   font-family: "Krona One", sans-serif;
+  transition: 0.5s;
+}
+
+.about-section .about-btn a:hover {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  border: 1px solid var(--white);
+  transition: 0.5s;
 }
 
 .about-section .vision .icon,
@@ -801,6 +818,14 @@ strong {
   font-weight: 500;
   font-size: 14px;
   font-family: "Krona One", sans-serif;
+  transition: 0.5s;
+}
+
+.service-section .service-box .service-btn a:hover {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  border: 1px solid var(--white);
+  transition: 0.5s;
 }
 
 /* ===service-section-end=== */
