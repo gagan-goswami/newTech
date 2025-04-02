@@ -26,11 +26,7 @@
 
   .service-section .section-title,
   .why-choose-us .section-title,
-  .partner-section .section-title,
-  .students-section .section-title,
-  .testimonial-section .section-title,
-  .our-courses .section-title,
-  .it-services .section-title {
+  .service-section .section-title {
     margin: 0px 0px 45px 0px;
   }
 
@@ -49,6 +45,11 @@
 @media (max-width: 767px) {
   .service-section .service-item {
     height: 370px;
+  }
+
+  .about-section .about-content h2,
+  .visuals-section .section-title h2 {
+    font-size: 30px;
   }
 }
 
