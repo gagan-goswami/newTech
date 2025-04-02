@@ -152,7 +152,7 @@ strong {
 }
 
 .header-section .navbar-nav .nav-link.active {
-  color: var(--primary-color);
+  color: var(--dark);
 }
 
 .header-section .dropdown-menu {
