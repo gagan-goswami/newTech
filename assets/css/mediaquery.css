@@ -55,45 +55,26 @@
 /* media-Query 575px */
 
 @media (max-width: 575px) {
-  .service-section .section-title h2,
-  .our-company-section .section-title h2,
-  .why-choose-us .section-title h2,
-  .partner-section .section-title h2,
-  .students-section .section-title h2,
-  .testimonial-section .section-title h2,
-  .cta-section .cta-item .content h2,
-  .our-courses .section-title h2,
-  .it-services .section-title h2,
-  .free-demo .section-title h2,
-  .contact-info .section-title h2 {
+  .service-section .section-title h2 {
     font-size: 22px;
     margin-bottom: 15px;
   }
 
-  .genai-section .hero h1 {
+  .hero-section .hero-caption h1 {
     font-size: 30px;
+    line-height: 40px;
   }
 
-  .cta-section .cta-item .content {
-    width: 100%;
-  }
-
-  .best-offers .offers-box-content h2 {
-    font-size: 30px;
-  }
-
-  .our-company-section .section-title span:not(.color-text)::after {
-    display: none;
+  .hero-section .hero-caption p {
+    margin-top: 20px;
   }
 
   .breadcrumb-section .breadcrumb-heading h1 {
     font-size: 20px;
   }
-}
 
-@media (max-width: 475px) {
-  .hero-section .hero-caption h1 {
-    font-size: 32px;
+  .hero-section .contact-link {
+    margin-top: 30px;
   }
 }
 

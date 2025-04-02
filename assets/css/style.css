@@ -1,8 +1,8 @@
 /* ====== Colors ====== */
 :root {
-  --primary-color: #eafa37;
+  --primary-color: #09a2ee;
   --secondary-color: #b2a1ed;
-  --dark: #000000;
+  --dark: #212529;
   --white: #ffffff;
   --grey: #516263;
   --bg-color: #b9b3b354;
@@ -94,7 +94,7 @@ strong {
   width: 100%;
   position: relative;
   z-index: 9999999;
-  background-color: var(--dark);
+  background-color: var(--primary-color);
 }
 
 .header-section .navbar {
@@ -272,7 +272,7 @@ strong {
 .header-section .conatact-btn {
   color: var(--dark);
   text-decoration: none;
-  background-color: var(--primary-color);
+  background-color: var(--white);
   padding: 12px 15px;
   font-size: 16px;
   font-weight: 500;
@@ -313,7 +313,20 @@ strong {
 .hero-section {
   padding: 90px 0px;
   text-align: center;
-  background-color: var(--dark);
+  background: url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.952);
+  z-index: -1;
 }
 
 .hero-section .hero-caption span {
@@ -349,7 +362,7 @@ strong {
   border-radius: 10px;
   align-items: center;
   padding: 2px 3px 2px 20px;
-  margin: 0px 5px;
+  margin: 5px 5px;
 }
 
 .hero-section .contact-link .btn-primary i {
@@ -371,7 +384,7 @@ strong {
   border-radius: 10px;
   align-items: center;
   padding: 2px 3px 2px 20px;
-  margin: 0px 5px;
+  margin: 5px 5px;
 }
 
 .hero-section .contact-link .btn-secondary i {
