@@ -5,7 +5,9 @@
   --dark: #212529;
   --white: #ffffff;
   --grey: #516263;
-  --bg-color: #b9b3b354;
+  --bg-color-1: #b9b3b354;
+  --bg-color-2: #fc30331c;
+  --bg-color-3: #09a2ee27;
 }
 
 /* ====== Global Reset ====== */
@@ -275,12 +277,13 @@ strong {
   text-decoration: none;
   background-color: var(--white);
   padding: 12px 15px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   border-radius: 10px;
   transition: ease-in-out 0.5s;
   margin: 0px 10px;
   border: 1px solid var(--dark);
+  font-family: "Krona One", sans-serif;
 }
 
 .header-section .conatact-btn:hover {
@@ -347,10 +350,12 @@ strong {
   border: none;
   background-color: var(--primary-color);
   font-weight: 500;
+  font-size: 14px;
   border-radius: 10px;
   align-items: center;
   padding: 2px 3px 2px 20px;
   margin: 5px 5px;
+  font-family: "Krona One", sans-serif;
 }
 
 .hero-section .contact-link .btn-primary i {
@@ -369,10 +374,12 @@ strong {
   border: none;
   background-color: var(--secondary-color);
   font-weight: 500;
+  font-size: 14px;
   border-radius: 10px;
   align-items: center;
   padding: 2px 3px 2px 20px;
   margin: 5px 5px;
+  font-family: "Krona One", sans-serif;
 }
 
 .hero-section .contact-link .btn-secondary i {
@@ -392,7 +399,7 @@ strong {
 
 .visuals-section {
   padding: 90px 0px;
-  background-color: #f5f5f5;
+  background-color: var(--bg-color-3);
 }
 
 .visuals-section .section-title {
@@ -404,6 +411,7 @@ strong {
   font-size: 20px;
   color: var(--secondary-color);
   font-weight: 600;
+  font-family: "Krona One", sans-serif;
 }
 
 .visuals-section .section-title span img {
@@ -412,7 +420,7 @@ strong {
 
 .visuals-section .section-title h2 {
   font-family: "Krona One", sans-serif;
-  font-size: 36px;
+  font-size: 50px;
   font-weight: 500;
   color: var(--dark);
   margin-top: 15px;
@@ -457,8 +465,8 @@ strong {
 }
 
 .visuals-section .trust-icon {
-  height: 100px;
-  width: 100px;
+  height: 90px;
+  width: 90px;
   background-color: var(--white);
   border-radius: 50%;
   display: flex;
@@ -493,36 +501,39 @@ strong {
 }
 
 .visuals-section .trust-badge h3 {
-  font-size: 22px;
-  font-weight: 600;
-  color: var(--dark);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--white);
   margin: 20px 20px 0px 20px;
+  font-family: "Krona One", sans-serif;
 }
 
 .visuals-section .trust-badge p {
   font-size: 16px;
   font-weight: 400;
-  color: var(--dark);
-  margin-top: 20px;
+  color: var(--white);
+  margin-top: 10px;
   margin-bottom: 0;
 }
 
-.cta-button {
-  background-color: var(--primary-color);
+.visuals-section .cta-button {
+  background-color: var(--secondary-color);
   color: white;
   border: none;
   padding: 0.8rem 2rem;
-  border-radius: 50px;
-  font-weight: 600;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 14px;
   text-transform: uppercase;
-  letter-spacing: 1px;
   transition: all 0.3s ease;
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: 10px;
+  text-decoration: none;
+  font-family: "Krona One", sans-serif;
 }
 
-.cta-button:hover {
-  background-color: var(--secondary-color);
+.visuals-section .cta-button:hover {
+  background-color: var(--dark);
   color: white;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -533,7 +544,7 @@ strong {
 
 .about-section {
   padding: 90px 0px;
-  background-color: var(--white);
+  background-color: var(--bg-color-2);
 }
 
 .about-section .about-image,
@@ -551,7 +562,7 @@ strong {
 }
 
 .about-section .about-image:before {
-  background-color: var(--dark);
+  background-color: var(--secondary-color);
   content: "";
   height: 300px;
   right: -10px;
@@ -566,6 +577,11 @@ strong {
   font-size: 18px;
   color: var(--secondary-color);
   font-weight: 600;
+  font-family: "Krona One", sans-serif;
+}
+
+.about-section .about-content span img {
+  height: 20px;
 }
 
 .about-section .about-content h2 {
@@ -576,6 +592,13 @@ strong {
   margin-top: 20px;
 }
 
+.about-section .about-content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--dark);
+  font-family: "Krona One", sans-serif;
+}
+
 .about-section .about-content p {
   font-size: 16px;
   margin: 20px 0px;
@@ -584,18 +607,18 @@ strong {
 .about-section .about-content ul {
   list-style: none;
   padding: 0;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .about-section .about-content ul li {
-  margin-bottom: 10px;
   font-weight: 600;
+  font-size: 14px;
 }
 
 .about-section .about-content ul li i {
   color: #25d366;
-  font-size: 20px;
-  margin-right: 10px;
+  font-size: 18px;
+  margin-right: 3px;
 }
 
 .about-section .about-btn {
@@ -610,6 +633,17 @@ strong {
   border-radius: 10px;
   text-decoration: none;
   font-weight: 500;
+  font-family: "Krona One", sans-serif;
+}
+
+.about-section .vision .icon,
+.about-section .mission .icon {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-section .vision,
@@ -622,7 +656,8 @@ strong {
   font-size: 20px;
   font-weight: 600;
   color: var(--dark);
-  margin-top: 20px;
+  margin-top: 10px;
+  font-family: "Krona One", sans-serif;
 }
 
 .about-section .vision p,
@@ -639,7 +674,7 @@ strong {
 
 .service-section {
   padding: 90px 0px;
-  background-color: var(--dark);
+  background-color: var(--bg-color-3);
 }
 
 .service-section .section-title {
@@ -651,25 +686,30 @@ strong {
   font-size: 18px;
   color: var(--secondary-color);
   font-weight: 600;
+  font-family: "Krona One", sans-serif;
+}
+
+.service-section .section-title span img {
+  height: 20px;
 }
 
 .service-section .section-title h2 {
   font-family: "Krona One", sans-serif;
   font-size: 50px;
   font-weight: 500;
-  color: var(--white);
+  color: var(--dark);
   margin-top: 20px;
 }
 
 .service-section .section-title p {
   font-size: 16px;
-  font-weight: 300;
-  color: var(--white);
+  font-weight: 400;
+  color: var(--dark);
   margin-top: 30px;
 }
 
 .service-section .service-box {
-  background-color: var(--white);
+  background-color: var(--primary-color);
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 25px;
@@ -679,19 +719,48 @@ strong {
 
 .service-section .service-box .icon {
   margin-bottom: 20px;
-  background-color: var(--dark);
+  background-color: var(--white);
   height: 90px;
   width: 90px;
-  border-radius: 10px;
+  border-radius: 50%;
   line-height: 90px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.service-section .service-box .icon::before {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+}
+
+@keyframes round {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.service-section .service-box .icon:before {
+  animation: round 6s linear infinite;
+  inset: -3px;
+  border: 4px dashed var(--white);
 }
 
 .service-section .service-box .content h3 {
   font-size: 20px;
-  font-weight: 600;
-  color: var(--dark);
+  font-family: "Krona One", sans-serif;
+  font-weight: 500;
+  color: var(--white);
   margin-top: 20px;
+  text-transform: uppercase;
 }
 
 .service-section .service-box .content p {
@@ -709,7 +778,7 @@ strong {
 }
 
 .service-section .service-box .content ul li {
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 5px;
 }
 
@@ -723,13 +792,15 @@ strong {
 }
 
 .service-section .service-box .service-btn a {
-  background-color: var(--primary-color);
+  background-color: var(--white);
   padding: 10px 15px;
   color: var(--dark);
   border: 1px solid var(--dark);
   border-radius: 10px;
   text-decoration: none;
   font-weight: 500;
+  font-size: 14px;
+  font-family: "Krona One", sans-serif;
 }
 
 /* ===service-section-end=== */
