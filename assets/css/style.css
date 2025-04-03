@@ -1546,12 +1546,6 @@ strong {
   overflow: hidden;
 }
 
-.image-slider .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .slider-2.owl-carousel {
   position: relative;
 }
