@@ -772,19 +772,30 @@ strong {
 }
 
 .service-section .service-box .content h3 {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Krona One", sans-serif;
   font-weight: 500;
   color: var(--white);
   margin-top: 20px;
   text-transform: uppercase;
+  position: relative;
+}
+
+.service-section .service-box .content h3::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--white);
 }
 
 .service-section .service-box .content p {
   font-size: 16px;
   font-weight: 400;
   color: var(--dark);
-  margin-top: 10px;
+  margin-top: 30px;
   text-align: justify;
 }
 
@@ -827,8 +838,212 @@ strong {
   border: 1px solid var(--white);
   transition: 0.5s;
 }
-
 /* ===service-section-end=== */
+
+/* ===success-story-section-start=== */
+
+.success-story {
+  background: url(../images/success-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 90px 0px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.success-story::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.815);
+  z-index: -1;
+}
+
+.success-story .success-content {
+  margin: 0px 150px 0px 150px;
+}
+
+.success-story .success-content h2 {
+  font-size: 50px;
+  font-weight: 500;
+  font-family: "Krona One", sans-serif;
+  margin-bottom: 20px;
+}
+
+.success-story.success-content p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.success-story .success-btn {
+  margin-top: 20px;
+}
+
+.success-story .success-btn a {
+  background-color: var(--primary-color);
+  padding: 10px 15px;
+  color: var(--white);
+  border: 1px solid var(--dark);
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: "Krona One", sans-serif;
+  font-size: 14px;
+}
+
+.success-story .success-btn a:hover {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  border: 1px solid var(--white);
+  transition: 0.5s;
+}
+
+/* ===success-story-section-end=== */
+
+.case-study {
+  padding: 90px 0px;
+  background-color: var(--bg-color-3);
+}
+
+.case-study .section-title {
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.case-study .section-title span {
+  font-size: 18px;
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-family: "Krona One", sans-serif;
+}
+
+.case-study .section-title img {
+  height: 20px;
+}
+
+.case-study .section-title h2 {
+  font-family: "Krona One", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  color: var(--dark);
+  margin-top: 20px;
+}
+
+.case-study .case-study-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+  background-color: var(--bg-color-2);
+}
+
+.case-study .case-study-header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1.5rem;
+}
+
+.case-study .case-study-header h3 {
+  font-size: 26px;
+  color: var(--white);
+  font-weight: 500;
+}
+
+.case-study .case-study-body {
+  padding: 2rem;
+}
+
+.case-study .results-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.case-study .results-list li {
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.8rem;
+}
+
+.case-study .results-list li:before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: var(--secondary-color);
+  position: absolute;
+  left: 0;
+}
+
+.case-study .testimonial-card {
+  background-color: var(--light-color);
+  border-left: 4px solid var(--secondary-color);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0 5px 5px 0;
+}
+
+.case-study .testimonial-text {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.case-study .testimonial-author {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.case-study .cta-button {
+  background-color: var(--primary-color);
+  padding: 10px 15px;
+  color: var(--white);
+  border: 1px solid var(--dark);
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: "Krona One", sans-serif;
+  font-size: 14px;
+}
+
+.case-study .cta-button:hover {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  border: 1px solid var(--white);
+  transition: 0.5s;
+}
+
+.case-study .strategy-item {
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.8rem;
+}
+
+.case-study .strategy-item:before {
+  content: "\f058";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: var(--secondary-color);
+  position: absolute;
+  left: 0;
+}
+
+.case-study .industry-tag {
+  display: inline-block;
+  background-color: var(--light-color);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--dark-color);
+}
 
 /*===footer-section-start ===*/
 

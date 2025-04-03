@@ -30,6 +30,10 @@
     margin: 0px 0px 45px 0px;
   }
 
+  .success-story .success-content {
+    margin: 0;
+  }
+
   .header-section .nav-link::after {
     height: 1px;
     bottom: 0;
@@ -48,7 +52,9 @@
   }
 
   .about-section .about-content h2,
-  .visuals-section .section-title h2 {
+  .visuals-section .section-title h2,
+  .success-story .success-content h2,
+  .case-study .section-title h2 {
     font-size: 30px;
   }
 }
