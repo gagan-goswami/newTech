@@ -114,15 +114,10 @@ $(".slider-2").owlCarousel({
   autoplay: true,
   autoplayHoverPause: true,
   loop: true,
-  margin: 12,
-  nav: true,
-  dots: false,
-  navText: [
-    '<i class="fa fa-chevron-left"></i>',
-    '<i class="fa fa-chevron-right"></i>',
-  ],
-  navClass: ["owl-prev", "owl-next"],
+  nav: false,
+  dots: true,
   responsiveClass: true,
+
   responsive: {
     0: {
       items: 1,

@@ -94,4 +94,14 @@
   .cta-section .learn-btn {
     padding: 10px 11px;
   }
+
+  .cta-section .contact-info {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .cta-section .cta-button {
+    font-size: 10px;
+  }
 }
