@@ -54,7 +54,9 @@
   .about-section .about-content h2,
   .visuals-section .section-title h2,
   .success-story .success-content h2,
-  .case-study .section-title h2 {
+  .case-study .section-title h2,
+  .testimonial-section .section-title h2,
+  .fun-facts-section .section-title h2 {
     font-size: 30px;
   }
 }

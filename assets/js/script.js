@@ -89,18 +89,20 @@ $(".slider-1").owlCarousel({
   autoplay: true,
   loop: true,
   margin: 10,
-  nav: false,
-  autoplayHoverPause: true,
-  dot: true,
+  navText: [
+    '<i class="fa fa-chevron-left"></i>',
+    '<i class="fa fa-chevron-right"></i>',
+  ],
+  navClass: ["owl-prev", "owl-next"],
   responsive: {
     0: {
-      items: 2,
+      items: 1,
     },
     767: {
-      items: 4,
+      items: 2,
     },
     991: {
-      items: 5,
+      items: 3,
     },
   },
 });
@@ -160,100 +162,43 @@ $(".slider-3").owlCarousel({
 
 AOS.init();
 
-// JavaScript
-function playVideo() {
-  // JavaScript
-  class VideoModalManager {
-    constructor() {
-      this.init();
-    }
-    init() {
-      $(".video-btn").click(function () {
-        const $videoSrc = $(this).data("src");
-        $(".modal").data("videoSrc", $videoSrc);
-      });
-      $(".modal").on("shown.bs.modal", function (e) {
-        const $videoSrc = $(this).data("videoSrc");
-        console.log("Video Source in modal:", $videoSrc); // Debugging
-        $(this)
-          .find("#video")
-          .attr("src", $videoSrc + "?autoplay=1&modestbranding=1&showinfo=0");
-      });
-      $(".modal").on("hide.bs.modal", function (e) {
-        $(this).find("#video").attr("src", "");
-      });
-    }
-  }
-  // Initialize the VideoModalManager
-  const videoModalManager = new VideoModalManager();
-}
+// Image Popup Functionality
+const imageBoxes = document.querySelectorAll(".image-box");
+const popup = document.querySelector(".image-popup");
+const popupImg = document.querySelector(".popup-content img");
+const closeBtn = document.querySelector(".close-popup");
 
-playVideo(); // Show popup when page loads
-document.addEventListener("DOMContentLoaded", function () {
-  setTimeout(function () {
-    document.getElementById("popupForm").style.display = "flex";
-  }, 100);
-});
-
-// Close popup function
-function closePopup() {
-  document.getElementById("popupForm").style.display = "none";
-}
-
-// Show popup when page loads
-document.addEventListener("DOMContentLoaded", function () {
-  setTimeout(function () {
-    document.getElementById("popupForm").style.display = "flex";
-  }, 100);
-});
-
-// Close popup function
-function closePopup() {
-  document.getElementById("popupForm").style.display = "none";
-}
-
-// Form submission handler
-document
-  .getElementById("mainPopupForm")
-  .addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    // Get form values
-    const name = document.getElementById("popupName").value;
-    const email = document.getElementById("popupEmail").value;
-    const phone = document.getElementById("popupPhone").value;
-
-    // Validate required fields
-    if (!name || !email) {
-      alert("Please fill in all required fields (Name and Email)");
-      return;
-    }
-
-    // Format the WhatsApp message
-    const whatsappMessage =
-      `New Contact Form Submission:\n\n` +
-      `Name: ${name}\n` +
-      `Email: ${email}\n` +
-      `${phone ? `Phone: ${phone}` : ""}\n`;
-
-    // Create WhatsApp URL with Indian country code (91)
-    const whatsappUrl = `https://wa.me/918767827759?text=${encodeURIComponent(
-      whatsappMessage
-    )}`;
-
-    // Open WhatsApp
-    window.open(whatsappUrl, "_blank");
-
-    // Close the popup
-    closePopup();
-
-    // Reset the form
-    e.target.reset();
+// Add click event to each image box
+imageBoxes.forEach((box) => {
+  box.addEventListener("click", function () {
+    const imgSrc = this.querySelector("img").src;
+    document.querySelector(".image-popup img").src = imgSrc;
+    document.querySelector(".image-popup").classList.add("active");
+    document.body.style.overflow = "hidden"; // Prevent scrolling
   });
+});
 
-// Close popup when clicking outside the form
-document.getElementById("popupForm").addEventListener("click", function (e) {
+// Close popup when clicking close button
+document.querySelector(".close-popup").addEventListener("click", function () {
+  document.querySelector(".image-popup").classList.remove("active");
+  document.body.style.overflow = ""; // Re-enable scrolling
+});
+
+// Close popup when clicking outside the image
+document.querySelector(".image-popup").addEventListener("click", function (e) {
   if (e.target === this) {
-    closePopup();
+    this.classList.remove("active");
+    document.body.style.overflow = ""; // Re-enable scrolling
+  }
+});
+
+// Close popup with ESC key
+document.addEventListener("keydown", function (e) {
+  if (
+    e.key === "Escape" &&
+    document.querySelector(".image-popup").classList.contains("active")
+  ) {
+    document.querySelector(".image-popup").classList.remove("active");
+    document.body.style.overflow = ""; // Re-enable scrolling
   }
 });
