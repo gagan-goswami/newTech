@@ -59,7 +59,8 @@
   .fun-facts-section .section-title h2,
   .service-section .section-title h2,
   .team-section .section-title h2,
-  .cta-section .cta-title {
+  .cta-section .cta-title,
+  .contact-section .section-title h2 {
     font-size: 22px;
   }
 
@@ -100,14 +101,14 @@
   .cta-section .learn-btn {
     padding: 10px 11px;
   }
-
-  .cta-section .contact-info {
-    font-size: 14px;
-  }
 }
 
 @media screen and (max-width: 425px) {
   .cta-section .cta-button {
     font-size: 10px;
+  }
+
+  .cta-section .contact-info {
+    font-size: 12px;
   }
 }
