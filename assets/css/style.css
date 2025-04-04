@@ -139,17 +139,17 @@ strong {
 .header-section .nav-link::after {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 0;
   height: 3px;
+  bottom: 0;
   background-color: var(--secondary-color);
-  bottom: -20px;
   left: 0;
   transform-origin: right;
   transition: 0.5s;
 }
 
 .header-section .nav-link:hover:after {
-  bottom: 5px;
+  width: 100%;
   transition: 0.5s;
 }
 
