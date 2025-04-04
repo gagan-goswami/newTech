@@ -135,8 +135,7 @@ $(".slider-2").owlCarousel({
 
 $(".slider-3").owlCarousel({
   slideBy: 1,
-  autoplay: false,
-  autoplayHoverPause: true,
+  autoplay: true,
   loop: true,
   margin: 12,
   nav: false,

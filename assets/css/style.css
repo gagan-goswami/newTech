@@ -1716,11 +1716,12 @@ strong {
   margin-bottom: 30px;
   background: var(--primary-color);
   border-radius: 10px;
-  padding: 30px;
+  padding: 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  height: 100%;
 }
 
 .team-section .team-member:hover img {
@@ -1738,51 +1739,18 @@ strong {
 }
 
 .team-section .team-member h3 {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
   color: var(--white);
   margin: 0;
-  font-family: "Krona One", sans-serif;
 }
 
-.team-section .team-member-info ul {
-  list-style: none;
-  padding: 0;
+.team-section .team-member p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #1f1e1e;
   margin: 0;
-  margin-top: 20px;
-}
-
-.team-section .team-member-info ul li {
-  display: inline-block;
-  margin-right: 5px;
-  font-size: 16px;
-  color: var(--primary-color);
-  transition: all 0.3s ease;
-  background-color: var(--white);
-  height: 30px;
-  width: 30px;
-  border-radius: 5px;
-  text-align: center;
-  line-height: 32px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  overflow: hidden;
-}
-
-.team-section .team-member-info ul li:hover {
-  color: var(--secondary-color);
-  transform: translateY(-5px);
-  transition: all 0.3s ease;
-}
-
-.team-section .team-member-info ul li:last-child {
-  margin-right: 0;
-}
-
-.team-section .team-member-info ul li a {
-  color: var(--primary-color);
-  text-decoration: none;
-  transition: all 0.3s ease;
+  margin-top: 5px;
 }
 
 /* ===team-section-end=== */
