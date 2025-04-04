@@ -1805,7 +1805,6 @@ strong {
   margin-bottom: 15px;
 }
 
-.footer-section .footer-item .social-icon,
 .footer-section .footer-item .services,
 .footer-section .footer-item .contact,
 .footer-section .footer-item .quick-links {
@@ -1818,38 +1817,6 @@ strong {
   font-size: 16px;
   color: var(--white);
   font-weight: 300;
-}
-
-.footer-section .footer-item .social-icon li {
-  display: inline-block;
-  margin-right: 5px;
-  font-size: 22px;
-  color: var(--primary-color);
-  transition: all 0.3s ease;
-  background-color: var(--white);
-  height: 40px;
-  width: 40px;
-  border-radius: 5px;
-  text-align: center;
-  line-height: 42px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  overflow: hidden;
-}
-
-.footer-section .footer-item .social-icon li:hover {
-  transform: translateY(-5px);
-  transition: all 0.3s ease;
-}
-
-.footer-section .footer-item .social-icon li:last-child {
-  margin-right: 0;
-}
-
-.footer-section .footer-item .social-icon li a {
-  color: var(--primary-color);
-  text-decoration: none;
-  transition: all 0.3s ease;
 }
 
 .footer-section .footer-item .services li,
