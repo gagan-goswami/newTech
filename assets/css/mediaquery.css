@@ -56,19 +56,25 @@
   .success-story .success-content h2,
   .case-study .section-title h2,
   .testimonial-section .section-title h2,
-  .fun-facts-section .section-title h2 {
-    font-size: 30px;
+  .fun-facts-section .section-title h2,
+  .service-section .section-title h2,
+  .team-section .section-title h2,
+  .cta-section .cta-title {
+    font-size: 22px;
+  }
+
+  .case-study .case-study-header h3 {
+    font-size: 20px;
+  }
+
+  .cta-section .cta-subtitle {
+    font-size: 18px;
   }
 }
 
 /* media-Query 575px */
 
 @media (max-width: 575px) {
-  .service-section .section-title h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
-
   .hero-section .hero-caption h1 {
     font-size: 40px;
     line-height: 60px;
