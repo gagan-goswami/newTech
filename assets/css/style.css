@@ -1989,3 +1989,91 @@ strong {
 }
 
 /*===footer-section-end===*/
+
+/*===breadcrumb-section-start=== */
+
+.breadcrumb-section {
+  padding: 50px 0px;
+  position: relative;
+  background: url(../images/breadcrumb-bg.jpg) center center repeat no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.breadcrumb-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #000000b0;
+  z-index: -1;
+}
+
+.breadcrumb-section .element .right {
+  position: absolute;
+  top: 10%;
+  background-color: var(--primary-color);
+  height: 50px;
+  width: 200px;
+  left: 0;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.breadcrumb-section .element .right {
+  animation: bounceInRight;
+  animation-duration: 2s;
+}
+
+.breadcrumb-section .element .left {
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+  background-color: var(--white);
+  height: 50px;
+  width: 200px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.breadcrumb-section .element .left {
+  animation: bounceInLeft;
+  animation-duration: 2s;
+}
+
+.breadcrumb-section .breadcrumb-heading h1 {
+  font-size: 30px;
+  color: var(--white);
+  font-weight: 600;
+  z-index: 1;
+}
+
+.breadcrumb-section .breadcrumb li {
+  font-size: 16px;
+  color: var(--white);
+  z-index: 1;
+}
+
+.breadcrumb-section .breadcrumb li i {
+  padding: 0px 10px;
+}
+
+.breadcrumb-section .breadcrumb li a {
+  font-size: 16px;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.breadcrumb-section .breadcrumb li a:hover {
+  color: var(--primary-color);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: var(--white);
+}
+
+/* ====breadcrumb-section-end=== */
