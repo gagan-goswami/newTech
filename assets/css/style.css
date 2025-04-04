@@ -1677,6 +1677,115 @@ strong {
     top: -50px;
   }
 }
+/* === image-slider-end === */
+
+/* ===team-section-start=== */
+
+.team-section {
+  padding: 90px 0px;
+  background-color: var(--bg-color-3);
+}
+
+.team-section .section-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.team-section .section-title span {
+  font-size: 18px;
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-family: "Krona One", sans-serif;
+}
+
+.team-section .section-title span img {
+  height: 20px;
+}
+
+.team-section .section-title h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-top: 10px;
+  font-family: "Krona One", sans-serif;
+}
+
+.team-section .team-member {
+  text-align: center;
+  margin-bottom: 30px;
+  background: var(--primary-color);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-section .team-member:hover img {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.team-section .team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: all 0.5s ease;
+}
+
+.team-section .team-member h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--white);
+  margin: 0;
+  font-family: "Krona One", sans-serif;
+}
+
+.team-section .team-member-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.team-section .team-member-info ul li {
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 16px;
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+  background-color: var(--white);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.team-section .team-member-info ul li:hover {
+  color: var(--secondary-color);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+.team-section .team-member-info ul li:last-child {
+  margin-right: 0;
+}
+
+.team-section .team-member-info ul li a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* ===team-section-end=== */
+
 /*===footer-section-start ===*/
 
 /* .footer-section {

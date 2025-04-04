@@ -135,7 +135,7 @@ $(".slider-2").owlCarousel({
 
 $(".slider-3").owlCarousel({
   slideBy: 1,
-  autoplay: true,
+  autoplay: false,
   autoplayHoverPause: true,
   loop: true,
   margin: 12,
@@ -147,10 +147,10 @@ $(".slider-3").owlCarousel({
       items: 1,
     },
     767: {
-      items: 2,
+      items: 3,
     },
     991: {
-      items: 3,
+      items: 4,
     },
   },
 });
