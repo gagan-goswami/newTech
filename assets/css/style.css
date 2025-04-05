@@ -452,7 +452,7 @@ strong {
   width: 20px;
   height: 20px;
   background: rgba(4, 157, 245, 0.267);
-  animation: animate 16s linear infinite;
+  animation: animate 5s linear infinite;
 }
 
 .background li:nth-child(0) {
