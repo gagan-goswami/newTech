@@ -142,7 +142,7 @@ strong {
   width: 0;
   height: 3px;
   bottom: 0;
-  background-color: var(--secondary-color);
+  background-color: var(--dark);
   left: 0;
   transform-origin: right;
   transition: 0.5s;
@@ -288,7 +288,7 @@ strong {
 
 .header-section .conatact-btn:hover {
   color: var(--white);
-  background-color: var(--secondary-color);
+  background-color: var(--dark);
   transition: ease-in-out 0.5s;
 }
 
@@ -1751,6 +1751,26 @@ strong {
   color: #1f1e1e;
   margin: 0;
   margin-top: 5px;
+}
+
+/* Dots Styling */
+.team-section .slider-3 .owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.team-section .slider-3 .owl-dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.team-section .slider-3 .owl-dot.active {
+  background-color: #3498db;
+  transform: scale(1.2);
 }
 
 /* ===team-section-end=== */

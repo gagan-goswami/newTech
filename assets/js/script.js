@@ -149,7 +149,7 @@ $(".slider-3").owlCarousel({
       items: 3,
     },
     991: {
-      items: 4,
+      items: 3,
     },
   },
 });
