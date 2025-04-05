@@ -318,6 +318,8 @@ strong {
   padding: 90px 0px;
   text-align: center;
   background-color: black;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-section .hero-caption span {
@@ -415,6 +417,125 @@ strong {
   margin-left: 5px;
   font-size: 18px;
   transition: 0.5s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.background li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 16s linear infinite;
+}
+
+.background li:nth-child(0) {
+  left: 0%;
+  width: 102px;
+  height: 102px;
+  bottom: -102px;
+  animation-delay: 1s;
+}
+.background li:nth-child(1) {
+  left: 72%;
+  width: 102px;
+  height: 102px;
+  bottom: -102px;
+  animation-delay: 5s;
+}
+.background li:nth-child(2) {
+  left: 52%;
+  width: 101px;
+  height: 101px;
+  bottom: -101px;
+  animation-delay: 2s;
+}
+.background li:nth-child(3) {
+  left: 36%;
+  width: 100px;
+  height: 100px;
+  bottom: -100px;
+  animation-delay: 15s;
+}
+.background li:nth-child(4) {
+  left: 18%;
+  width: 105px;
+  height: 105px;
+  bottom: -105px;
+  animation-delay: 11s;
+}
+.background li:nth-child(5) {
+  left: 56%;
+  width: 107px;
+  height: 107px;
+  bottom: -107px;
+  animation-delay: 1s;
+}
+.background li:nth-child(6) {
+  left: 52%;
+  width: 105px;
+  height: 105px;
+  bottom: -105px;
+  animation-delay: 2s;
+}
+.background li:nth-child(7) {
+  left: 7%;
+  width: 102px;
+  height: 102px;
+  bottom: -102px;
+  animation-delay: 28s;
+}
+.background li:nth-child(8) {
+  left: 33%;
+  width: 104px;
+  height: 104px;
+  bottom: -104px;
+  animation-delay: 7s;
+}
+.background li:nth-child(9) {
+  left: 69%;
+  width: 103px;
+  height: 103px;
+  bottom: -103px;
+  animation-delay: 35s;
+}
+.background li:nth-child(10) {
+  left: 0%;
+  width: 105px;
+  height: 105px;
+  bottom: -105px;
+  animation-delay: 17s;
+}
+.background li:nth-child(11) {
+  left: 74%;
+  width: 108px;
+  height: 108px;
+  bottom: -108px;
+  animation-delay: 28s;
 }
 
 /* ===hero-section-end=== */
