@@ -2087,8 +2087,8 @@ strong {
 .contact-section .contact-box .contact-icon {
   margin-top: 20px;
   font-size: 24px;
-  height: 100px;
-  width: 100px;
+  height: 90px;
+  width: 90px;
   color: var(--secondary-color);
   transition: all 0.3s ease;
   background-color: var(--white);
