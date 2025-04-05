@@ -167,3 +167,20 @@ $(document).ready(function () {
 function updateModalImage(imageSrc) {
   document.getElementById("modalImage").src = imageSrc;
 }
+
+// navlink active //
+
+document.addEventListener("DOMContentLoaded", function () {
+  const currentUrl = window.location.pathname.split("/").pop() || "index.html";
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  navLinks.forEach((link) => {
+    const linkUrl = link.getAttribute("href");
+    if (currentUrl === linkUrl) {
+      link.classList.add("active");
+      link.setAttribute("aria-current", "page");
+    } else {
+      link.classList.remove("active");
+      link.removeAttribute("aria-current");
+    }
+  });
+});
