@@ -9,19 +9,21 @@
     display: none;
   }
 
-  .header-section .nav-link {
+  .header-section .menu-bar .nav-link {
     margin: 0;
+    font-size: 16px;
+    padding: 10px 8px;
   }
 
   .header-section .nav-link::after {
-    transform: scaleX(100%);
+    width: 100%;
     margin: 0px;
     height: 1px;
   }
 
   .offcanvas-body {
     padding: 10px 0;
-    background-color: var(--dark);
+    background-color: var(--primary-color);
   }
 
   .service-section .section-title,
