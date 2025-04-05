@@ -808,6 +808,17 @@ strong {
 .service-section .service-box .content ul li {
   font-weight: 400;
   margin-bottom: 5px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.service-section .service-box .content ul li:before {
+  content: "\f058";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: var(--secondary-color);
+  position: absolute;
+  left: -25px;
 }
 
 .service-section .service-box:hover {
