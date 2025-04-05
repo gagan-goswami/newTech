@@ -2084,4 +2084,27 @@ strong {
   margin: 0;
 }
 
+.contact-section .contact-box .contact-icon {
+  margin-top: 20px;
+  font-size: 24px;
+  height: 100px;
+  width: 100px;
+  color: var(--secondary-color);
+  transition: all 0.3s ease;
+  background-color: var(--white);
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.contact-section .contact-box a {
+  font-size: 16px;
+  color: #f0f0f0;
+  margin: 0;
+}
+
 /* ====contact-section-end=== */

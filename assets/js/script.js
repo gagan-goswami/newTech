@@ -154,45 +154,16 @@ $(".slider-3").owlCarousel({
   },
 });
 
-AOS.init();
+// image modal poup //
 
-// Image Popup Functionality
-const imageBoxes = document.querySelectorAll(".image-box");
-const popup = document.querySelector(".image-popup");
-const popupImg = document.querySelector(".popup-content img");
-const closeBtn = document.querySelector(".close-popup");
-
-// Add click event to each image box
-imageBoxes.forEach((box) => {
-  box.addEventListener("click", function () {
-    const imgSrc = this.querySelector("img").src;
-    document.querySelector(".image-popup img").src = imgSrc;
-    document.querySelector(".image-popup").classList.add("active");
-    document.body.style.overflow = "hidden"; // Prevent scrolling
+$(document).ready(function () {
+  $(".slider-2 .image-box img").click(function () {
+    var imgSrc = $(this).attr("src");
+    $("#modalImage").attr("src", imgSrc);
+    $("#imageModal").modal("show");
   });
 });
 
-// Close popup when clicking close button
-document.querySelector(".close-popup").addEventListener("click", function () {
-  document.querySelector(".image-popup").classList.remove("active");
-  document.body.style.overflow = ""; // Re-enable scrolling
-});
-
-// Close popup when clicking outside the image
-document.querySelector(".image-popup").addEventListener("click", function (e) {
-  if (e.target === this) {
-    this.classList.remove("active");
-    document.body.style.overflow = ""; // Re-enable scrolling
-  }
-});
-
-// Close popup with ESC key
-document.addEventListener("keydown", function (e) {
-  if (
-    e.key === "Escape" &&
-    document.querySelector(".image-popup").classList.contains("active")
-  ) {
-    document.querySelector(".image-popup").classList.remove("active");
-    document.body.style.overflow = ""; // Re-enable scrolling
-  }
-});
+function updateModalImage(imageSrc) {
+  document.getElementById("modalImage").src = imageSrc;
+}

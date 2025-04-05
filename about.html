@@ -336,32 +336,61 @@
             <div class="slider-2 owl-carousel">
                 <!-- Slide Items -->
                 <div class="image-box">
-                    <img src="./assets/images/service-img(1).png" alt="service-images" class="img-fluid">
+                    <img src="./assets/images/service-img(1).png" alt="service-images" class="img-fluid"
+                        data-bs-toggle="modal" data-bs-target="#imageModal"
+                        onclick="updateModalImage('./assets/images/service-img(1).png')">
                 </div>
 
                 <div class="image-box">
-                    <img src="./assets/images/service-img(2).png" alt="service-images" class="img-fluid">
+                    <img src="./assets/images/service-img(2).png" alt="service-images" class="img-fluid"
+                        data-bs-toggle="modal" data-bs-target="#imageModal"
+                        onclick="updateModalImage('./assets/images/service-img(2).png')">
                 </div>
 
                 <div class="image-box">
-                    <img src="./assets/images/service-img(3).png" alt="service-images" class="img-fluid">
+                    <img src="./assets/images/service-img(3).png" alt="service-images" class="img-fluid"
+                        data-bs-toggle="modal" data-bs-target="#imageModal"
+                        onclick="updateModalImage('./assets/images/service-img(3).png')">
                 </div>
 
                 <div class="image-box">
-                    <img src="./assets/images/service-img(4).png" alt="service-images" class="img-fluid">
+                    <img src="./assets/images/service-img(4).png" alt="service-images" class="img-fluid"
+                        data-bs-toggle="modal" data-bs-target="#imageModal"
+                        onclick="updateModalImage('./assets/images/service-img(4).png')">
                 </div>
 
                 <div class="image-box">
-                    <img src="./assets/images/service-img(5).png" alt="service-images" class="img-fluid">
+                    <img src="./assets/images/service-img(5).png" alt="service-images" class="img-fluid"
+                        data-bs-toggle="modal" data-bs-target="#imageModal"
+                        onclick="updateModalImage('./assets/images/service-img(5).png')">
                 </div>
 
                 <div class="image-box">
-                    <img src="./assets/images/service-img(6).png" alt="service-images" class="img-fluid">
+                    <img src="./assets/images/service-img(6).png" alt="service-images" class="img-fluid"
+                        data-bs-toggle="modal" data-bs-target="#imageModal"
+                        onclick="updateModalImage('./assets/images/service-img(6).png')">
                 </div>
             </div>
         </div>
-
     </section>
+
+    <!-- Bootstrap Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Image Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="modalImage" src="" alt="Enlarged view" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- image-slider-end -->
 
