@@ -360,14 +360,6 @@ strong {
   font-family: "Krona One", sans-serif;
 }
 
-.hero-section .contact-link .btn-primary a {
-  font-weight: 500;
-  font-size: 14px;
-  color: var(--dark);
-  text-decoration: none;
-  font-family: "Krona One", sans-serif;
-}
-
 .hero-section .contact-link .btn-primary:hover i,
 .hero-section .contact-link .btn-secondary:hover i {
   transform: rotate(360deg);
@@ -397,13 +389,6 @@ strong {
   align-items: center;
   padding: 2px 3px 2px 20px;
   margin: 5px 5px;
-}
-
-.hero-section .contact-link .btn-secondary a {
-  font-weight: 500;
-  font-size: 14px;
-  color: var(--white);
-  text-decoration: none;
   font-family: "Krona One", sans-serif;
 }
 
