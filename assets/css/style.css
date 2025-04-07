@@ -2006,6 +2006,14 @@ strong {
   text-decoration: none;
   font-size: 14px;
   font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.footer-section .footer-item .services li a:hover,
+.footer-section .footer-item .contact-link li a:hover,
+.footer-section .footer-item .quick-links li a:hover {
+  margin-left: 5px;
+  transition: all 0.3s ease;
 }
 
 .footer-section .footer-item .services li a i,
@@ -2340,6 +2348,7 @@ strong {
 
 .privacy-policy .privacy-header h1 {
   font-weight: 700;
+  margin: 0;
 }
 
 .privacy-policy .last-updated {
@@ -2360,6 +2369,7 @@ strong {
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--secondary-color);
   margin: 2rem 0 1.5rem;
+  font-size: 26px;
   font-weight: 600;
 }
 
@@ -2376,16 +2386,186 @@ strong {
   margin: 1.5rem 0;
 }
 
-.privacy-policy .contact-info {
-  background-color: var(--light-bg);
-  border-radius: 0.5rem;
-  padding: 10px;
-  margin-top: 2rem;
+/* ===privacy-policy-section-end=== */
+
+/* ===terms-and-conditions-section-start=== */
+
+.terms-and-conditions-section .terms-header {
+  background-color: var(--bg-color-3);
+  color: var(--dark);
+  padding: 4rem 0;
+  margin-bottom: 3rem;
 }
 
-.privacy-policy .section-icon {
+.terms-and-conditions-section .terms-header h1 {
+  font-weight: 700;
+  margin: 0;
+}
+
+.terms-and-conditions-section .intro-text {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.terms-and-conditions-section .terms-content {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+  padding: 2.5rem 0px;
+  margin-bottom: 3rem;
+}
+
+.terms-and-conditions-section h2 {
+  color: var(--primary-color);
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--secondary-color);
+  margin: 2rem 0 1.5rem;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.terms-and-conditions-section h3 {
+  color: var(--secondary-color);
+  margin: 1.5rem 0 1rem;
+  font-weight: 500;
+}
+
+.terms-and-conditions-section .highlight-box {
+  background-color: var(--light-bg);
+  border-left: 4px solid var(--secondary-color);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.terms-and-conditions-section .section-icon {
   color: var(--secondary-color);
   margin-right: 0.5rem;
 }
 
-/* ===privacy-policy-section-end=== */
+.terms-and-conditions-section .service-item {
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.terms-and-conditions-section .service-item:before {
+  content: "•";
+  color: var(--secondary-color);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .terms-and-conditions-section .terms-header {
+    padding: 3rem 0;
+  }
+
+  .terms-and-conditions-section .terms-content {
+    padding: 1.5rem;
+  }
+}
+
+/* ===terms-and-conditions-section-end=== */
+
+/* ===refund-policy-section-start=== */
+
+.refund-policy-section .refund-header {
+  background-color: var(--bg-color-3);
+  color: var(--dark);
+  padding: 4rem 0;
+  margin-bottom: 3rem;
+}
+
+.refund-policy-section .refund-header h1 {
+  font-weight: 700;
+  margin: 0;
+}
+
+.refund-policy-section .intro-text {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.refund-policy-section .refund-content {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+  padding: 2.5rem 0px;
+  margin-bottom: 3rem;
+}
+
+.refund-policy-section h2 {
+  color: var(--primary-color);
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--secondary-color);
+  margin: 2rem 0 1.5rem;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.refund-policy-section .policy-item {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.refund-policy-section .eligible:before {
+  content: "✓";
+  color: var(--success-color);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.refund-policy-section .not-eligible:before {
+  content: "✗";
+  color: var(--danger-color);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.refund-policy-section .process-step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.refund-policy-section .step-number {
+  background-color: var(--secondary-color);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.refund-policy-section .highlight-box {
+  background-color: var(--light-bg);
+  border-left: 4px solid var(--secondary-color);
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.refund-policy-section .contact-email {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .refund-policy-section .refund-header {
+    padding: 3rem 0;
+  }
+
+  .refund-policy-section .refund-content {
+    padding: 1.5rem;
+  }
+}
+
+/* ===refund-policy-section-end=== */
