@@ -88,6 +88,7 @@ $(".slider-1").owlCarousel({
   slideBy: 1,
   autoplay: true,
   loop: true,
+  dots: false,
   margin: 10,
   navText: [
     '<i class="fa fa-chevron-left"></i>',
