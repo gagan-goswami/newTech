@@ -69,7 +69,7 @@ body {
 }
 
 /* ====== Disable Text Selection Globally ====== */
-/* body,
+body,
 p,
 h1,
 h2,
@@ -82,12 +82,11 @@ span {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-} */
+}
 
 /* ====== Typography ====== */
 strong {
   font-weight: 600;
-  /* More visible than 400 */
 }
 
 /* ====header-section-start==== */
