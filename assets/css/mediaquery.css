@@ -44,6 +44,16 @@
   .header-section .nav-link:hover:after {
     bottom: 0px;
   }
+
+  .footer-section .copy-right .copy-right-main {
+    justify-content: center;
+  }
+
+  .footer-section .copy-right .copy-right-main p,
+  .footer-section .copy-right .copy-right-main a {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
 }
 
 /* media-Query 768px */
@@ -112,5 +122,13 @@
 
   .cta-section .contact-info {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 475px) {
+  .footer-section .copy-right .copy-right-main p,
+  .footer-section .copy-right .copy-right-main a {
+    font-size: 12px;
+    margin-bottom: 10px;
   }
 }
