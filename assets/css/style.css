@@ -2328,3 +2328,64 @@ strong {
 }
 
 /* ====contact-section-end=== */
+
+/* ===privacy-policy-section-start=== */
+
+.privacy-policy .privacy-header {
+  background-color: var(--bg-color-3);
+  color: var(--dark);
+  padding: 4rem 0;
+  margin-bottom: 3rem;
+}
+
+.privacy-policy .privacy-header h1 {
+  font-weight: 700;
+}
+
+.privacy-policy .last-updated {
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+.privacy-policy .privacy-content {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  margin-bottom: 3rem;
+}
+
+.privacy-policy h2 {
+  color: var(--primary-color);
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--secondary-color);
+  margin: 2rem 0 1.5rem;
+  font-weight: 600;
+}
+
+.privacy-policy h3 {
+  color: var(--secondary-color);
+  margin: 1.5rem 0 1rem;
+  font-weight: 500;
+}
+
+.privacy-policy .highlight-box {
+  background-color: var(--light-bg);
+  border-left: 4px solid var(--secondary-color);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.privacy-policy .contact-info {
+  background-color: var(--light-bg);
+  border-radius: 0.5rem;
+  padding: 10px;
+  margin-top: 2rem;
+}
+
+.privacy-policy .section-icon {
+  color: var(--secondary-color);
+  margin-right: 0.5rem;
+}
+
+/* ===privacy-policy-section-end=== */
